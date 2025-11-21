@@ -61,7 +61,7 @@ fun TampilSiswa(
                             fontSize = 22.sp
                         )
                     }
-                    HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
+                    HorizontalDivider(thickness = 1.dp, color = Color.Black)
                 }
                 Spacer(modifier = Modifier.height(10.dp))
                 Button(
