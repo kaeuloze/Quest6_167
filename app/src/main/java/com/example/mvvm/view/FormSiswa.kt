@@ -41,7 +41,7 @@ fun FormSiswa(
                     containerColor = colorResource(id = R.color.teal_700))
             )}
     ){ isiRuang ->
-        Column(modifier = Modifier.padding(paddingValues = isiRuang),
+        Column(modifier = Modifier.padding(paddingValues = isiRuang).fillMaxSize(),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally){
             OutlinedTextField(
