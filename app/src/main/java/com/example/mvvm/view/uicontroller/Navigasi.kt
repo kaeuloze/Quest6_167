@@ -37,8 +37,22 @@ fun SiswaApp(
             navController = navController,
             startDestination = Navigasi.Formulir.name,
 
-            modifier = Modifier.padding(paddingValues = isiRuang)
-        ) {
+            modifier = Modifier.padding(paddingValues = isiRuang)) {
+            composable(route = Navigasi.Formulir.name) {
+                //edit 3 : Tambahkan variable konteks
+                val konteks = LocalContext.current
+                FormSiswa(
+                    pilihanJK = DataJK.JenisJK,
+                    onSubmitButtonClicked = {
+                        viewModel.setSiswa(it)
+                        navController.navigate(route = Navigasi.Detail.name)
+                    }
+                )
+            }
+
         }
     }
 }
+
+
+
